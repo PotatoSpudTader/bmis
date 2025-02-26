@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Ash Elliot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #ababab;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1em;
+            margin: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 50px 50px 50px; /* Reduced top padding */
+        }
+
+        h1, p {
+            color: rgb(255, 255, 255);
+        }
+
+        h1 {
+            margin-top: 0; /* Removed top margin */
+            font-size: 60px;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+
+        /* Gallery Grid Styles */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+            grid-template-rows: auto;
+            gap: 20px;
+            padding: 20px;
+            margin-top: 20px; /* Reduced margin-top */
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            height: 400px; /* Set a fixed height to make the images larger */
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Optional: Styling to allow horizontal images to fill the grid correctly */
+        .landscape img {
+            object-fit: cover;
+        }
+
+        /* Optional: Styling for portrait images */
+        .portrait img {
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="youngyears.html">Young Years</a>
+        <a href="travel.html">Travel</a>
+    </nav>
+    
+    <section>
+        <h1>Welcome to My Photo Gallery</h1>
+    </section>
+
+    <!-- Gallery Container -->
+    <section class="gallery-container">
+        <!-- Gallery Items -->
+        <div class="gallery-item landscape">
+            <img src="file:///Users/akelliot/Downloads/Creative%20/Photos%20P4/Photos%20P4%2021.44.21/Spanky%20and%20the%20Bears%20@%20Blue%20Room%204:6:24/ASH01713.jpg" alt="Photo 1">
+            <div class="spanky piink">Caption 1</div>
+        </div>
+        <div class="gallery-item landscape">
+            <img src="file:///Users/akelliot/Downloads/Creative%20/Photos%20P5/GUO%20Trip%209:14-15/ASH08175.jpg" alt="Photo 2">
+            <div class="Backpacking Step">Caption 2</div>
+        </div>
+        <div class="gallery-item landscape">
+            <img src="file:///Users/akelliot/Downloads/Creative%20/Photos%20P5/GUO%20Trip%209:14-15/ASH07920.jpg" alt="Photo 3">
+            <div class="Backpack ladybug">Caption 3</div>
+        </div>
+        <div class="gallery-item landscape">
+            <img src="file:///Users/akelliot/Downloads/Creative%20/Photos%20P5/Bahamas%20Export/ASH08875.jpg" alt="Photo 4">
+            <div class="Bahamas Ocean">Caption 4</div>
+        </div>
+        <div class="gallery-item landscape">
+            <img src="file:///Users/akelliot/Downloads/Creative%20/Photos%20P5/Bahamas%20Export/ASH08080.jpg" alt="Photo 5">
+            <div class="Bahamas Ocean Blue">Caption 5</div>
+        </div>
+
+        <div class="gallery-item portrait">
+            <img src="file:///Users/akelliot/Library/Mobile%20Documents/com~apple~CloudDocs/Photos%20P6/Gu%20Sports/MBB/GU%20vs%20WP%2010:30:24/ASH03965-Enhanced-NR.jpg" alt="Photo 6">
+            <div class="Battle Jump">Caption 6</div>
+        </div>
+        <div class="gallery-item portrait">
+            <img src="file:///Users/akelliot/Downloads/Creative%20/Photos%20/Cars/Porsche%20Dealership/_ASH2463%20copy.jpg" alt="Photo 7">
+            <div class="porche">Caption 7</div>
+        </div>
+        <div class="gallery-item portrait">
+            <img src="file:///Users/akelliot/Library/Mobile%20Documents/com~apple~CloudDocs/Photos%20P6/Bulletin/Spires/Tartuffe/20241107%20Spires%20Tartuffe%20-%20AElliot-22.jpg" alt="Photo 8">
+            <div class="Tartuffe">Caption 8</div>
+        </div>
+        <div class="gallery-item portrait">
+            <img src="file:///Users/akelliot/Downloads/Creative%20/Photos%20P4/Photos%20P4%2021.44.21/Spanky%20and%20the%20Bears%20@%20Blue%20Room%204:6:24/ASH01992.jpg" alt="Photo 9">
+            <div class="spanky face">Caption 9</div>
+        </div>
+    </section>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waffle Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-container {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+        }
+        .waffle-menu {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            cursor: pointer;
+        }
+        .waffle-menu div {
+            width: 10px;
+            height: 10px;
+            background-color: #333;
+            border-radius: 2px;
+        }
+        .dropdown {
+            display: block; /* Made menu visible */
+            position: absolute;
+            top: 50px;
+            left: 0;
+            background-color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            width: 150px;
+        }
+        .dropdown-title {
+            display: block;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        .dropdown a {
+            display: block;
+            padding: 10px;
+            color: #333;
+            text-decoration: none;
+            background: white;
+        }
+        .dropdown a:hover {
+            background-color: #f0f0f0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="waffle-menu">
+            <div></div><div></div><div></div>
+            <div></div><div></div><div></div>
+            <div></div><div></div><div></div>
+        </div>
+        <div class="dropdown">
+            <span class="dropdown-title">Photo Galleries</span>
+            <a href="gallery1.html">Gallery 1</a>
+            <a href="gallery2.html">Gallery 2</a>
+            <a href="gallery3.html">Gallery 3</a>
+        </div>
+    </div>
+    
+   

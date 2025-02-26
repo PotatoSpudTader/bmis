@@ -10,65 +10,7 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            background-image: url(); /* Replace with your image URL */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            margin-bottom: 20px; /* Added margin to the bottom */
-        }
-        nav {
-            background-color: #333;
-            padding: 2em; /* Increased padding for thickness */
-            margin: 0;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-        nav a {
-            color: rgb(4, 4, 4);
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        section {
-            padding: 150px 50px 50px; /* Adjusted padding to account for fixed nav */
-        }
-    </style>
-</head>
-<body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="travel.html">Travel</a>
-        <a href="youngyears.html">Young Years</a>
-    </nav>
-    
-    <section>
-        <h1>Welcome to My Website</h1>
-        <h2>My Name is Ash Elliot</h2>
-        <p>I am an 18 year old photographer, here is some of my work and some of my story.</p>
-    </section>
-</body>
-</html>
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Ash Elliot</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-image: url(file:///Users/akelliot/Downloads/Creative%20/Photos%20P5/Bend%20Trip%202024/ASH00989.jpg); /* Replace with your image URL */
+            background-image: url(https://lh3.googleusercontent.com/blogger_img/APIUysjYgL_LDj22ab2KlXVdRS3RwpvmNKS-pT47JiYZedvXDwG4dPlmprKBTJz68Sd-7AgSJpUEgAtNXlQ=s1600); /* Replace with your image URL */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -98,7 +40,7 @@
         }
         /* Added styles to make h1 and p text white */
         h1, p {
-            color: rgb(0, 0, 0);
+            color: white;
         }
 
         /* Increase the font size of the "My Younger Years" heading */
@@ -111,8 +53,22 @@
             margin-top: 20px; /* Adjust this value to create space below h1 */
         }
 
-        
-    
+        /* Large rectangle on the left side with soft edges */
+        .rectangle {
+            position: absolute;
+            top: 300px; /* Adjust position */
+            left: 0;
+            width: 300px; /* Width of the rectangle */
+            height: calc(100% - 300px); /* Full height minus the nav space */
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            border-top-right-radius: 50px; /* Soft rounded edges on top-right */
+            border-bottom-right-radius: 50px; /* Soft rounded edges on bottom-right */
+            padding: 20px;
+            color: white;
+            font-size: 18px;
+            box-sizing: border-box;
+            overflow-y: auto; /* Allows scrolling if the content overflows */
+        }
     </style>
 </head>
 <body>
@@ -122,7 +78,19 @@
         <a href="travel.html">Travel</a>
     </nav>
     
-    <!DOCTYPE html>
+    <!-- Rectangle on the left -->
+    <div class="rectangle">
+        <h2>About Me As A Munchkin</h2>
+        <p>I was born in Boulder Colorado and raised in Breckenridge. From a very young age my parents instilled a love of all things in the outdoors. This has signiifgantly influenced my photography, I like to capture things that exemply beauty, and to me that means something natural or something that is a product of creativity.</p>
+    </div>
+
+    <section>
+        <h1>My Younger Years</h1>
+    </section>
+</body>
+</html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -199,11 +167,6 @@
             <a href="gallery3.html">Gallery 3</a>
         </div>
     </div>
-</body>
-</html>
-
-    
-
 </body>
 </html>
 
